@@ -1,18 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 12:57:08 by dabdulla          #+#    #+#             */
-/*   Updated: 2025/09/30 13:24:10 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/10/01 19:12:40 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/10/13 12:36:49 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+char	*ft_strdup(const char *s)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	char	*d;
+	size_t	size;
+
+	size = ft_strlen(s);
+	d = malloc(size + 1);
+	if (!d)
+		return (NULL);
+	ft_memcpy(d, s, size);
+	d[size] = '\0';
+	return (d);
 }
+
+/*#include <stdio.h>
+int	main(void)
+{
+	char *s1 = "hello";
+	char *dup;
+
+	dup = ft_strdup(s1);
+	printf("Duplicate: %s\n", dup);
+	free(dup);
+}*/

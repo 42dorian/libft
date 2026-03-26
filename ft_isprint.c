@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dabdulla <dabdulla@student.42vienna.com>   #+#  +:+       +#+        */
+/*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-09-29 13:33:13 by dabdulla          #+#    #+#             */
-/*   Updated: 2025-09-29 13:33:13 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/09/29 13:33:13 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/09/30 13:24:00 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

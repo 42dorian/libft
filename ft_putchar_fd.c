@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 12:57:08 by dabdulla          #+#    #+#             */
-/*   Updated: 2025/09/30 13:24:10 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/10/07 14:01:35 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/10/09 11:26:08 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	write(fd, &c, 1);
 }

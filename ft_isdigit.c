@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dabdulla <dabdulla@student.42vienna.com>   #+#  +:+       +#+        */
+/*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-09-29 13:17:32 by dabdulla          #+#    #+#             */
-/*   Updated: 2025-09-29 13:17:32 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/09/29 13:17:32 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/09/30 13:24:04 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

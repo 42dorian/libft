@@ -1,18 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 12:57:08 by dabdulla          #+#    #+#             */
-/*   Updated: 2025/09/30 13:24:10 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/10/07 14:04:27 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/10/07 14:18:52 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
+
+/*#include <fcntl.h>
+int	main(void)
+{
+	char *s = "hello";
+	int fd = open("test_putchar.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	if (fd < 0)
+		return (1);
+	ft_putstr_fd(s, fd);
+
+	close(fd);
+	return (0);
+}*/

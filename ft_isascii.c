@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dabdulla <dabdulla@student.42vienna.com>   #+#  +:+       +#+        */
+/*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-09-29 13:28:30 by dabdulla          #+#    #+#             */
-/*   Updated: 2025-09-29 13:28:30 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/09/29 13:28:30 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/09/30 13:24:07 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

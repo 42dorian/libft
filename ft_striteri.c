@@ -1,18 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabdulla <dabdulla@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 12:57:08 by dabdulla          #+#    #+#             */
-/*   Updated: 2025/09/30 13:24:10 by dabdulla         ###   ########.fr       */
+/*   Created: 2025/10/07 13:56:16 by dabdulla          #+#    #+#             */
+/*   Updated: 2025/10/13 12:55:02 by dabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	unsigned int	i;
+
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, s + i);
+		i++;
+	}
 }
+/*void upper(unsigned int i, char *c)
+{
+    *c = *c - 32;
+}
+
+int main(void)
+{
+    char s[] = "hello";
+    ft_striteri(s, upper);
+    printf("Final s: %s\n", s);
+    return 0;
+}*/
